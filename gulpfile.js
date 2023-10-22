@@ -21,7 +21,7 @@ function htmlHandle (cb) {
 }
 
 function cssHandle (cb) {
-    src('./src/**/*.css')
+    src('./src/*.css')
         .pipe(css())
         .pipe(minifyCSS())
         .pipe(dest('dest'))
